@@ -1,0 +1,10 @@
+<h3>Actualizar el tipo de moneda</h3>
+<router-outlet></router-outlet>
+<form class="card m-3">
+    <input  [formControl]="id" class="p-2 mb-2" placeholder="id"/>
+    <input  [formControl]="nombre" class="p-2 mb-2" placeholder="nombre"/>
+    <input  [formControl]="codigoDivisa" class="p-2 mb-2" placeholder="codigoDivisa"/>
+    <input  [formControl]="tipoCambio" class="p-2 mb-2" placeholder="tipoCambio"/>
+    <button (click)="getAccessToken(authRequest)" class="btn btn-success">
+          Aceptar</button>
+</form>

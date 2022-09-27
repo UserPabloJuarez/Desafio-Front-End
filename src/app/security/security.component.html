@@ -1,0 +1,28 @@
+<h3>Informacion del tipo de cambio</h3>
+<div class="container main-container">
+    <router-outlet></router-outlet>
+  </div>
+<hr>
+<div class="row">
+    <div class="col">
+
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Codigo Divisa</th>
+                    <th>Nombre</th>
+                    <th>Tipo de cambio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let money of response">
+                <td scope="row">{{money.id}}</td>
+                <td>{{money.codigoDivisa}}</td>
+                <td>{{money.nombre}}</td>
+                <td>{{money.tipoCambio}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
